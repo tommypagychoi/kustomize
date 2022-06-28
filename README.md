@@ -1,0 +1,2 @@
+# kustomize
+kustomize_test
