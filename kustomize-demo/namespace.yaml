@@ -1,0 +1,12 @@
+piVersion: apps/v1
+kind: Deployment
+metadata: 
+  name: deployment
+  namespace: production
+
+--- // ---를 통해 여러 개의 리소스를 생성가능
+apiVersion: apps/v1
+kind: Service
+metadata: 
+  name: deployment
+  namespace: production
