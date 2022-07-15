@@ -9,4 +9,4 @@ apiVersion: apps/v1
 kind: Service
 metadata: 
   name: deployment
-  namespace: production
+  namespace: blue-green
