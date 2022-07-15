@@ -15,7 +15,7 @@ configurations:
   - rollout-transform.yaml
  
 resources:
-  - namespace.yaml
+#  - namespace.yaml
   - rollout.yaml
   - service-active.yaml
   - service-preview.yaml
