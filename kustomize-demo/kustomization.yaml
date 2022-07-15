@@ -12,22 +12,22 @@ commonLabels:
  
  
 configurations:
-  - rollout-transform.yaml
+#  - rollout-transform.yaml
  
 resources:
 # base Argo CD components
-  - https://raw.githubusercontent.com/argoproj/argo-cd/stable/manifests/ha/install.yaml
+#  - https://raw.githubusercontent.com/argoproj/argo-cd/stable/manifests/ha/install.yaml
 #  - namespace.yaml
-  - rollout.yaml
-  - service-active.yaml
-  - service-preview.yaml
+#  - rollout.yaml
+#  - service-active.yaml
+#  - service-preview.yaml
 
 components:
 # extensions controller component
-- https://github.com/argoproj-labs/argocd-extensions/manifests
+#- https://github.com/argoproj-labs/argocd-extensions/manifests
 
-configMapGenerator:
-- name: superapi-config
-  literals:
-    - WELCOME=Hello from v1!
-    - PORT=8080   
+#configMapGenerator:
+#- name: superapi-config
+#  literals:
+#    - WELCOME=Hello from v1!
+#    - PORT=8080   
