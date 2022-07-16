@@ -42,5 +42,29 @@ spec:
               configMapKeyRef:
                 name: superapi-config
                 key: WELCOME
+        livenessProbe:
+          httpGet:
+            path: /emm/admin/login.do
+            port: 35080
+          initialDelaySeconds: 30
+          periodSeconds: 30
+        command: ["/bin/sh","-c"]
+        arg: ["/data/apache-tomcat/bin/catalina.sh run"]
+        envFrom:
+          - configMapRef:
+              name: cm
+          - secretRef:
+              name: db-secret
+        env:
+        - name: POD_NAME
+          valueFrom:
+             filedRef:
+                fieldPath: metadata.name
+         - name:NODE_NAME
+           valueFrom:
+              fieldPath: spec.nodeName
+         - name: LOG_PATH
+           value: /data/logs/app/$(SERVICE)/$(POD_NAME)
+           
         ports:
         - containerPort: 8080
