@@ -23,5 +23,5 @@ resources:
 configMapGenerator:
 - name: superapi-config
   literals:
-    - WELCOME=Hello from v33!
+    - WELCOME=Hello from v2567324354
     - PORT=8080
