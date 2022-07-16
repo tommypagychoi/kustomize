@@ -1,14 +1,19 @@
-
-kind: Service
 apiVersion: v1
+kind: Service
 metadata:
   name:  service
 spec:
-  selector:
-    app:  superapi
-  type:  ClusterIP
-#  type:  NodePort
   ports:
-  - name:  http
-    port:  80
-    targetPort:  8080
+    - protocol: tcp
+      port:  35080
+      targetPort: 35080
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: green
+spec:
+  ports:
+    - protocol: tcp
+      port:  35080
+      targetPort: 35080
