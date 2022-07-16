@@ -32,6 +32,6 @@ spec:
         - containerPort: 8080
   strategy:
     blueGreen:
-      activeService: superapi-svc-active
-      previewService: superapi-svc-preview
+      activeService:  service
+      previewService: green
       autoPromotionEnabled: false
