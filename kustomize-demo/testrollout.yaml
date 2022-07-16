@@ -25,7 +25,8 @@ spec:
         labelSelector:
           matchLabels:
             app: overlay
-      containers:
+     containers:
+      
       - name: main
         image: ghcr.io/gbaeke/super:1.0.2
         imagePullPolicy: Always 
