@@ -2,8 +2,8 @@ apiVersion: kustomize.config.k8s.io/v1beta1
 kind: Kustomization
 namespace: blue-green
 
-nameSuffix: -geba
-namePrefix: dev-
+nameSuffix: -PRD
+namePrefix: DEV-
 
 commonLabels:
   app: superapi
