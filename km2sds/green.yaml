@@ -1,11 +1,26 @@
+#kind: Service
+#apiVersion: v1
+#metadata:
+#  name:  superapi-svc-green
+#spec:
+#  selector:
+#    app:  superapi
+#  type:  ClusterIP
+#  ports:
+#  - name:  http
+#    port:  80
+#    targetPort:  8080
+
+
 kind: Service
 apiVersion: v1
 metadata:
-  name:  green
+  name:  superapi-svc-breen
 spec:
   selector:
     app:  superapi
   type:  ClusterIP
+#  type:  NodePort
   ports:
   - name:  http
     port:  80
