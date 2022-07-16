@@ -16,7 +16,7 @@ configurations:
 
 resources:
 #  - namespace.yaml
-  - testrollout.yaml
+  - rollout.yaml
   - service-active.yaml
   - service-preview.yaml
 
