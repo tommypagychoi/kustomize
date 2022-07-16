@@ -5,5 +5,5 @@ metadata:
 spec:
   ports:
     - protocol: tcp
-      port:  35080
-      targetPort: 35080
+      port:  80
+      targetPort: 8080
