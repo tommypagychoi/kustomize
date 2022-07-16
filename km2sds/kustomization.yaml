@@ -17,7 +17,7 @@ resources:
 #  - namespace.yaml
 #  - rollout.yaml
    - service.yaml
-#   - green.yaml
+   - green.yaml
 
 configMapGenerator:
 - name: superapi-config
