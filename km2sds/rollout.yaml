@@ -33,5 +33,5 @@ spec:
   strategy:
     blueGreen:
       activeService:  superapi-svc-active
-      previewService: green
+      previewService: superapi-svc-breen
       autoPromotionEnabled: false
