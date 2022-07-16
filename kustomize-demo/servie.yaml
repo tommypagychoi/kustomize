@@ -1,1 +1,13 @@
-servie
+kind: Service
+apiVersion: v1
+metadata:
+  name:  superapi-svc-active
+spec:
+  selector:
+    app:  superapi
+  type:  ClusterIP
+#  type:  NodePort
+  ports:
+  - name:  http
+    port:  80
+    targetPort:  8080
