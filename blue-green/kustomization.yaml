@@ -5,6 +5,12 @@ namespace: blue-green
 nameSuffix: -geba
 namePrefix: dev-
 
+configMapGenerator:
+- name: superapi-config
+  literals:
+    - WELCOME=Hello from v2!
+    - PORT=8080
+    
 commonLabels:
   app: superapi
   version: v1
@@ -20,8 +26,4 @@ resources:
   - service-active.yaml
   - service-preview.yaml
 
-configMapGenerator:
-- name: superapi-config
-  literals:
-    - WELCOME=Hello from v2!
-    - PORT=8080
+
