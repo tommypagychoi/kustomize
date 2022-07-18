@@ -8,7 +8,7 @@ namePrefix: dev-
 configMapGenerator:
 - name: superapi-config
   literals:
-    - WELCOME=Hello from v2!
+    - WELCOME=Hello from v1!
     - PORT=8080
     
 commonLabels:
